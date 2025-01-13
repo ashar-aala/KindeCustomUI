@@ -1,34 +1,16 @@
-import {
-  getKindeCSRF,
-  getKindeRequiredCSS,
-  getKindeRequiredJS,
-} from "@kinde/infrastructure";
+import { getKindeWidget } from "@kinde/infrastructure";
 
-const Page = () => {
+export default async function Page({ context, request }) {
   return `
-        <html lang="en">
-            <head>
-                <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex" />
-    <meta name="csrf-token" content="${getKindeCSRF}" />
-    <title>Hello world</title>
-    ${getKindeRequiredCSS()}
-    ${getKindeRequiredJS()}
-  </head>
-  <body>
-    <dev>
-      <header>
-        <h1>Componey Name</h1>
-      </header>
-      <main>
-        <h6>How are you</h6>
-      </main>
-    </dev>
-  </body>
-</html>
-
-        `;
-};
-
-export default Page;
+		<html>
+			<head>
+				<title>Login | My business</title>
+			</head>
+			<body>
+					<div>
+						<h1>Login</h1>
+						${getKindeWidget()}
+					</div>
+			</body>
+		</html>`;
+}
