@@ -2,6 +2,8 @@
   "name": "kindecustomui",
   "version": "1.0.0",
   "dependencies": {
-    "@kinde/infrastructure": "^0.2.1"
+    "@kinde/infrastructure": "^0.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }

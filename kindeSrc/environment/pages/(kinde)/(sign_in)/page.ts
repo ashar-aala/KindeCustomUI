@@ -20,7 +20,7 @@ import {
     <body>
       <dev>
         <header>
-          <h1>Componey Name</h1>
+          <h1>Company Name</h1>
         </header>
         <main>
           <h6>How are you</h6>
