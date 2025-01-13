@@ -5,9 +5,9 @@ import {
     getKindeWidget,
   } from "@kinde/infrastructure";
   
-  const Page = ({request}) => {
+  const Page = () => {
     return `
-          <html lang="${request.locale.lang}">
+          <html lang="en">
               <head>
                   <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
