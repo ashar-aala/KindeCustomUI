@@ -2,6 +2,7 @@ import {
     getKindeCSRF,
     getKindeRequiredCSS,
     getKindeRequiredJS,
+    getKindeWidget,
   } from "@kinde/infrastructure";
   
   const Page = () => {
@@ -23,6 +24,7 @@ import {
         </header>
         <main>
           <h6>How are you</h6>
+          ${getKindeWidget()}
         </main>
       </dev>
     </body>
