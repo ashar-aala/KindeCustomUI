@@ -33,7 +33,8 @@ const Layout = async ({ request }) => {
             <h1>Company Name</h1>
           </header>
           <main>
-            <h6>How are you</h6>
+            <h6>Hello world</h6>
+            <h6>Default Page</h6>
             {getKindeWidget()}
           </main>
         </dev>
